@@ -11,7 +11,7 @@ public class VentanaPrincipal extends JFrame implements
     // Un contenedor de elementos gráficos
     private Container contenedor;
     // Botones para seleccionar una figura geométrica determinada
-    private JButton cilindro, esfera, pirámide;
+    private JButton cilindro, esfera, piramide;
     /**
     * Constructor de la clase VentanaPrincipal
     */
@@ -42,15 +42,15 @@ public class VentanaPrincipal extends JFrame implements
         /* Agrega al botón un ActionListener para que gestione eventos del botón */
         esfera.addActionListener(this);
         // Establece el botón de la pirámide
-        pirámide = new JButton();
-        pirámide.setText("Pirámide");
-        pirámide.setBounds(225, 50, 100, 23); /* Establece la posición del botón de la pirámide */
+        piramide = new JButton();
+        piramide.setText("Pirámide");
+        piramide.setBounds(225, 50, 100, 23); /* Establece la posición del botón de la pirámide */
         /* Agrega al botón un ActionListener para que gestione eventos del botón */
-        pirámide.addActionListener(this);
+        piramide.addActionListener(this);
         // Se añade cada componente gráfico al contenedor de la ventana
         contenedor.add(cilindro);
         contenedor.add(esfera);
-        contenedor.add(pirámide);
+        contenedor.add(piramide);
     }
     /**
     * Método que gestiona los eventos generados en la ventana principal
@@ -64,7 +64,7 @@ public class VentanaPrincipal extends JFrame implements
             VentanaCilindro cilindro = new VentanaCilindro(); /* Crea la ventana del cilindro */
             cilindro.setVisible(true); /* Establece que se visualice la ventana del cilindro */
         }
-        if (evento.getSource() == pirámide) { /* Si se pulsa el botón pirámide */
+        if (evento.getSource() ==piramide) { /* Si se pulsa el botón pirámide */
             VentanaPiramide pirámide = new VentanaPiramide(); /* Crea la ventana de la pirámide */
             pirámide.setVisible(true); /* Establece que se visualice la ventana de la pirámide */
         }

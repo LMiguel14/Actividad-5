@@ -19,8 +19,8 @@ public class Piramide extends FiguraGeometrica {
     }
     
     public double calcularSuperficie() {
-        double áreaBase = Math.pow(base, 2.0);
-        double áreaLado = 2.0 * base * apotema;
-        return áreaBase + áreaLado;
+        double areaBase = Math.pow(base, 2.0);
+        double areaLado = 2.0 * base * apotema;
+        return areaBase + areaLado;
         }
 }

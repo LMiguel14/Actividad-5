@@ -84,7 +84,7 @@ public class VentanaPiramide extends JFrame implements
 
         public void actionPerformed(ActionEvent event) {
 
-            Piramide pirámide;
+            Piramide piramide;
             boolean error = false;
             double base = 0;
             double altura = 0;
@@ -97,11 +97,11 @@ public class VentanaPiramide extends JFrame implements
                 // Se obtiene y convierte el valor numérico del apotema
                 apotema = Double.parseDouble(campoApotema.getText());
                 // Se crea un objeto Pirámide
-                pirámide = new Piramide(base, altura, apotema);
+                piramide = new Piramide(base, altura, apotema);
                 // Se muestra el volumen
-                volumen.setText("Volumen (cm3): " + String.format("%.2f",pirámide.calcularVolumen()));
+                volumen.setText("Volumen (cm3): " + String.format("%.2f",piramide.calcularVolumen()));
                 // Se muestra la superficie
-                superficie.setText("Superficie (cm2): " + String.format("%.2f",pirámide.calcularSuperficie()));
+                superficie.setText("Superficie (cm2): " + String.format("%.2f",piramide.calcularSuperficie()));
                 
                 } catch (Exception e) {
                         error = true; // Si ocurre una excepción
